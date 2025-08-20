@@ -12,7 +12,6 @@
         
         <form action="#" class="w-75 mx-auto">
             <h2 class="text-center">Product Management System</h2>
-
             <label for="">Product Name:</label>
             <input type="text" class="form-control mb-4" id="productName">
             <label for="">Product Price:</label>
@@ -21,8 +20,13 @@
             <input type="text" class="form-control mb-4" id="productCategory">
             <label for="">Product Description:</label>
             <input type="text" class="form-control mb-4" id="productDesc">
-            <button type="submit" onclick="addProduct()" class="btn bg-success mt-3">Add Product</button>
+            <button type="button" onclick="addProduct()" class="btn bg-success mt-3">Add Product</button>
         </form>
+         
+        <div class="w-75 mx-auto my-4">
+            <label for="search">search:</label>
+            <input type="text" oninput="search(this.value);" placeholder="Search By Name" class="form-control">
+        </div>
 
         <table class="table w-75 mx-auto">
             <thead>
@@ -38,8 +42,6 @@
             </thead>
 
             <tbody id="tbody">
-                
-                
             </tbody>
         </table>
     </div>
