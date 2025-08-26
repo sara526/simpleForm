@@ -20,9 +20,10 @@
             <input type="text" class="form-control mb-4" id="productCategory">
             <label for="">Product Description:</label>
             <input type="text" class="form-control mb-4" id="productDesc">
-            <button type="button" onclick="addProduct()" class="btn bg-success mt-3">Add Product</button>
+            <button type="button" id="addbtn" onclick="addProduct()" class="btn bg-success mt-3">Add Product</button>
+            <button type="button" id="updatebtn" class="btn bg-success mt-3 d-none">Update</button>
         </form>
-         
+         <!-- saerch input -->
         <div class="w-75 mx-auto my-4">
             <label for="search">search:</label>
             <input type="text" oninput="search(this.value);" placeholder="Search By Name" class="form-control">
